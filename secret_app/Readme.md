@@ -93,9 +93,4 @@ This project is open source and available under the [MIT License](LICENSE).
 **Manne UdayKiran**
 [GitHub](https://github.com/ManneUdayKiran)
 
-```
 
----
-
-Let me know if you need a [MongoDB setup guide](f), [Passport.js config example](f), or [host it on Render instructions](f).
-```
