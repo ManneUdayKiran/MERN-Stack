@@ -108,11 +108,6 @@ This repository is licensed under the MIT License.
 ## 🙋‍♂️ Author
 
 **ManeUdayKiran**
-GitHub: [@yourusername](https://github.com/ManneUdayKiran)
+GitHub: [@ManneUdayKiran](https://github.com/ManneUdayKiran)
 
-```
 
----
-
-Let me know if you'd like this in [DOC format](f) or want a [GitHub repo structure diagram](f) included.
-```
