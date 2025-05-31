@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.add-note {
+  margin-top: 20px;
+}
+
+.textarea1 {
+  box-sizing: border-box;
+  height: 100px;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 2px rgb(128, 128, 128, 0.6);
+
+  resize: none;
+}
+
+.note {
+  font-size: 24px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  width: 25vw;
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin-inline-start: 110px;
+  box-shadow: 1px 1px 5px 2px rgb(128, 128, 128, 0.6);
+  color: black;
+  align-content: center;
+  text-align: justify;
+}
+
+.note-buttons button {
+  margin-right: 5px;
+  background-color: rgb(251, 186, 9);
+  box-sizing: border-box;
+  display: inline;
+  padding: 5px 5px;
+  float: right;
+}
+.note-input button {
+  background-color: rgb(251, 186, 9);
+  box-sizing: border-box;
+  border-radius: 50%;
+  padding: 9px 9px;
+  margin-inline-start: 300px;
+  margin-top: -90px;
+  position: relative;
+  bottom: 20px;
+}
+#button:hover {
+  opacity: 0.5;
+}
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  position: relative;
+  top: -40px;
+  left: -10px;
+  height: 80px;
+  width: 100vw;
+  color: aliceblue;
+  background-color: rgb(255, 183, 0);
+  text-align: center;
+  box-shadow: 2px 3px 3px rgb(143, 142, 139, 0.4);
+}
+.note-input {
+  /* box-sizing: border-box;
+    border-radius: 10px;
+    width: 50vw;
+    box-shadow:  gray ;
+    text-decoration: none;
+    border: 1px solid gray; */
+}
+
+footer {
+  font-size: medium;
+  text-align: center;
+  color: #000000;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+}
+#tagline {
+  text-align: center;
+}
+#title2 {
+  padding: 20px;
+  text-align: left;
+}
+#savebutton {
+  background-color: rgb(251, 186, 9);
+}
+.textarea1::placeholder {
+  color: gray; /* Adjust the color as needed */
+  opacity: 1; /* Ensure full visibility */
+}

@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* background: linear-gradient(to top right, rgb(64, 35, 108,0.7) 25%, hsl(196, 42%, 58%,0.8) 10%); */
+    background-image: -webkit-linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
+}
+
+.box {
+    background-color: #fff;
+    padding: 1px 20px;
+    margin: 10px auto;
+    max-width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: left;
+
+}
+.box2 {
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 0%;
+    padding-bottom: 0;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.box2 h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.box2 p {
+    text-transform: capitalize;
+    display: inline;
+    margin-left: 0px;
+
+}
+
+.box2 form {
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.box2 input[type="text"] {
+    width: 90%;
+    padding: 21px 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    border-right: none;
+    margin-right: 23px;
+    margin-left: -20px;
+    
+}
+
+.box2 button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 45%;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    bottom: 47px;
+    font-size: x-large;
+}
+
+.box2 button:hover {
+    background-color: #0056b3;
+}
+.item label{
+    display: inline;
+    margin-left: 0px; 
+    padding: 10px 20;
+}
+.item{
+    padding: 20px ;
+}
+.heading{
+    text-align: left;
+    position: relative;
+    bottom: 10px;
+}
+.item input[type="checkbox"]:checked + label .task-text {
+    text-decoration: line-through;
+}
+

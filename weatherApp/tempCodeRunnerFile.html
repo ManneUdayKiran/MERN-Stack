@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2><i class="fa fa-map-marker"></i><span class="material-symbols-outlined">
+                location_on
+                </span></h2>
+                <h3 id="location"></h3>
+            <h6 id="weather">
+
+            </h6>
+            <h4><span id="temp"></span><sup>o</sup>C</h4>
+            <img src="" alt="" id="icon" srcset="">
+            <button onclick="window.location.reload()" class="refresh"><i class="fa fa-refresh"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#5f6368"><path d="M196-331q-20-36-28-72.5t-8-74.5q0-131 94.5-225.5T480-798h43l-80-80 39-39 149 149-149 149-40-40 79-79h-41q-107 0-183.5 76.5T220-478q0 29 5.5 55t13.5 49l-43 43ZM476-40 327-189l149-149 39 39-80 80h45q107 0 183.5-76.5T740-479q0-29-5-55t-15-49l43-43q20 36 28.5 72.5T800-479q0 131-94.5 225.5T480-159h-45l80 80-39 39Z"/></svg></i></button>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    var city="hyderabad";
+    // Replace with your desired city name
+    var apiKey = "d21b506fdb1afefe74eec17a777170d8"; // Replace with your OpenWeatherMap API key
+    var link = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
+
+    var request = new XMLHttpRequest();
+    request.open('GET', link, true);
+    request.onload = function() {
+        if (request.status >= 200 && request.status < 400) {
+            var obj = JSON.parse(this.response);
+            console.log(obj);
+            document.getElementById('location').innerHTML = obj.name; // Convert temperature to Celsius
+
+            document.getElementById('weather').innerHTML = obj.weather[0].description;
+            document.getElementById('temp').innerHTML = Math.round(obj.main.temp - 273.15); // Convert temperature to Celsius
+            document.getElementById('icon').src = "https://openweathermap.org/img/w/" + obj.weather[0].icon + ".png";
+        } else {
+            console.log("The city data is not available");
+        }
+    };
+    request.send();
+</script>
+
+
+</html>

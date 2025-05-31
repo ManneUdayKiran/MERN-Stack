@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/todolist.css">
+</head>
+<body>
+    <div class="box">
+        <h1 class="heading">Todo List</h1>
+    </div>
+    <div class="box2">
+       
+      <!-- EJS Template -->
+<% for(var i=0; i < dayej.length; i++) { %>
+    <div class="item">
+        <input type="checkbox" name="taskCheckbox" data-task-id="<%= dayej[i]._id %>">
+        <label>
+            <p class="task-text"><%= dayej[i].name %></p>
+        </label>
+    </div>
+<% } %>
+
+        <form action="/" method="post">
+            <input type="text" name="ele1" placeholder="Enter the task">
+            <button type="submit">+</button>
+ 
+        </form>
+    </div>
+    
+</body>
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('.item input[type="checkbox"]').forEach(checkbox => {
+        checkbox.addEventListener('change', function(event) {
+            const taskId = event.target.dataset.taskId;
+            if (event.target.checked) {
+                fetch(`/tasks/${taskId}`, { method: 'delete' })
+                    .then(response => {
+                        if (response.ok) {
+                            console.log("Task deleted successfully");
+                            // Optionally, remove the task from the UI
+                            event.target.parentNode.remove();
+                        } else {
+                            console.error("Failed to delete task. Server returned:", response.status, response.statusText);
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error deleting task:", error);
+                    });
+            }
+        });
+    });
+});
+
+    </script>
+    
+</html>
