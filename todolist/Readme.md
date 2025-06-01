@@ -2,6 +2,7 @@
 # 📝 ToDo List App
 
 A simple and responsive ToDo List web application that allows users to manage their daily tasks efficiently.
+---
 visit my app at https://todolist-sb6h.onrender.com
 
 ## 📌 Features
