@@ -7,6 +7,7 @@ This repository contains a collection of web development projects built using th
 
 ### 1. 📝 TodoList App
 A simple task manager to add, update, delete, and track your daily tasks.
+
 visit my app at https://todolist-sb6h.onrender.com
 
 **Tech Stack:** React.js, Node.js, Express.js, MongoDB  
@@ -20,6 +21,9 @@ visit my app at https://todolist-sb6h.onrender.com
 ### 2. 🧠 Keeper App
 A note-keeping application inspired by Google Keep.
 
+Visit my app at:
+https://keeper-app-wuuo.onrender.com
+
 **Tech Stack:** React.js (Frontend only)  
 **Features:**
 - Create and delete notes
@@ -29,6 +33,8 @@ A note-keeping application inspired by Google Keep.
 
 ### 3. 🔐 Secrets App
 An authentication-based app where users can register and post secrets anonymously.
+visit my app at:
+https://authentication-r7cd.onrender.com
 
 **Tech Stack:** Node.js, Express.js, MongoDB, EJS, Passport.js  
 **Features:**
@@ -40,6 +46,8 @@ An authentication-based app where users can register and post secrets anonymousl
 
 ### 4. 🌤️ Weather App
 Displays current weather based on selected cities using OpenWeatherMap API.
+visit my app at:
+https://weather-app-ibi6.onrender.com
 
 **Tech Stack:** HTML, CSS, JavaScript (Frontend only)  
 **Features:**
