@@ -33,6 +33,7 @@ https://keeper-app-wuuo.onrender.com
 
 ### 3. 🔐 Secrets App
 An authentication-based app where users can register and post secrets anonymously.
+
 visit my app at:
 https://authentication-r7cd.onrender.com
 
@@ -46,6 +47,7 @@ https://authentication-r7cd.onrender.com
 
 ### 4. 🌤️ Weather App
 Displays current weather based on selected cities using OpenWeatherMap API.
+
 visit my app at:
 https://weather-app-ibi6.onrender.com
 
